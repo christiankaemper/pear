@@ -1,4 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <f xmlns="http://pear.php.net/dtd/rest.categorypackageinfo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.categorypackageinfo     http://pear.php.net/dtd/rest.categorypackageinfo.xsd">
+    <pi>
+        <p>
+            <n>PHPDeploy</n>
+            <c>christiankaemper.github.com/pear</c>
+            <ca xlink:href="/rest/c/Default">Default</ca>
+            <l>BSD License</l>
+            <s>PHPDeploy is a simple deployment tool writen in php</s>
+            <d>PHPDeploy is a deployment tool</d>
+            <r xlink:href="/rest/r/phpdeploy" />
+        </p>
 
+        <a>
+            <r>
+                <v>0.0.5</v>
+                <s>alpha</s>
+            </r>
+
+        </a>
+
+        <deps>
+            <v>0.0.5</v>
+            <d>a:1:{s:8:"required";a:3:{s:3:"php";a:1:{s:3:"min";s:5:"5.3.2";}s:13:"pearinstaller";a:1:{s:3:"min";s:5:"1.9.2";}s:7:"package";a:6:{i:0;a:3:{s:4:"name";s:11:"ClassLoader";s:7:"channel";s:16:"pear.symfony.com";s:3:"min";s:6:"2.0.10";}i:1;a:3:{s:4:"name";s:7:"Console";s:7:"channel";s:16:"pear.symfony.com";s:3:"min";s:6:"2.0.10";}i:2;a:3:{s:4:"name";s:6:"Finder";s:7:"channel";s:16:"pear.symfony.com";s:3:"min";s:6:"2.0.10";}i:3;a:3:{s:4:"name";s:8:"Net_SFTP";s:7:"channel";s:25:"phpseclib.sourceforge.net";s:3:"min";s:5:"0.2.2";}i:4;a:3:{s:4:"name";s:8:"Net_SSH1";s:7:"channel";s:25:"phpseclib.sourceforge.net";s:3:"min";s:5:"0.2.2";}i:5;a:3:{s:4:"name";s:8:"Net_SSH2";s:7:"channel";s:25:"phpseclib.sourceforge.net";s:3:"min";s:5:"0.2.2";}}}}</d>
+        </deps>
+
+    </pi>
 </f>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/phpdeploy">PHPDeploy</p>
+    <c>christiankaemper.github.com/pear</c>
+    <v>0.0.5</v>
+    <a>0.0.5</a>
+    <mp>5.3.2</mp>
+    <st>alpha</st>
+    <l>BSD License</l>
+    <m>kaemper</m>
+    <s>PHPDeploy is a simple deployment tool writen in php</s>
+    <d>PHPDeploy is a deployment tool</d>
+    <da>2012-02-20 15:00:00</da>
+    <n>blablabla</n>
+    <f>9059</f>
+    <g>http://christiankaemper.github.com/pear/get/PHPDeploy-0.0.5</g>
+    <x xlink:href="package.0.0.5.xml"/>
+</r>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packagerversion="2.0.0a3" version="2.0" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>PHPDeploy</name>
+ <channel>christiankaemper.github.com/pear</channel>
+ <summary>PHPDeploy is a simple deployment tool writen in php</summary>
+ <description>PHPDeploy is a deployment tool</description>
+ <lead>
+  <name>Christian Kaemper</name>
+  <user>kaemper</user>
+  <email>kaemper at ish.de</email>
+  <active>yes</active>
+ </lead>
+ <date>2012-02-20</date>
+ <time>15:00:00</time>
+ <version>
+  <release>0.0.5</release>
+  <api>0.0.5</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license>BSD License</license>
+ <notes>blablabla</notes>
+ <contents>
+  <dir name="/">
+   <file name="src/PHPDeploy/Version.php" role="php"/>
+   <file name="src/PHPDeploy/phpdeploy.xml" role="cfg"/>
+   <file name="src/PHPDeploy/Deploy.php" role="php"/>
+   <file name="src/PHPDeploy/Component/Server/Ssh.php" role="php"/>
+   <file name="src/PHPDeploy/Component/Server/Server.php" role="php"/>
+   <file name="src/PHPDeploy/Component/Server/Factory.php" role="php"/>
+   <file name="src/PHPDeploy/Component/Server/Exception.php" role="php"/>
+   <file name="src/PHPDeploy/Component/Project.php" role="php"/>
+   <file name="src/PHPDeploy/Component/Parser/Xml.php" role="php"/>
+   <file name="src/PHPDeploy/Component/Parser/Parser.php" role="php"/>
+   <file name="src/PHPDeploy/Component/Parser/Factory.php" role="php"/>
+   <file name="src/PHPDeploy/Component/Exception.php" role="php"/>
+   <file name="src/PHPDeploy/Command/Rollback.php" role="php"/>
+   <file name="src/PHPDeploy/Command/Release.php" role="php"/>
+   <file name="src/PHPDeploy/Command/Deploy.php" role="php"/>
+   <file name="src/PHPDeploy/Command/Command.php" role="php"/>
+   <file name="src/phpdeploy.php" role="script">
+    <tasks:replace from="/usr/bin/env php" to="php_bin" type="pear-config"/>
+    <tasks:replace from="@php_bin@" to="php_bin" type="pear-config"/>
+    <tasks:replace from="@php_dir@" to="php_dir" type="pear-config"/>
+   </file>
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.3.2</min>
+   </php>
+   <pearinstaller>
+    <min>1.9.2</min>
+   </pearinstaller>
+   <package>
+    <name>ClassLoader</name>
+    <channel>pear.symfony.com</channel>
+    <min>2.0.10</min>
+   </package>
+   <package>
+    <name>Console</name>
+    <channel>pear.symfony.com</channel>
+    <min>2.0.10</min>
+   </package>
+   <package>
+    <name>Finder</name>
+    <channel>pear.symfony.com</channel>
+    <min>2.0.10</min>
+   </package>
+   <package>
+    <name>Net_SFTP</name>
+    <channel>phpseclib.sourceforge.net</channel>
+    <min>0.2.2</min>
+   </package>
+   <package>
+    <name>Net_SSH1</name>
+    <channel>phpseclib.sourceforge.net</channel>
+    <min>0.2.2</min>
+   </package>
+   <package>
+    <name>Net_SSH2</name>
+    <channel>phpseclib.sourceforge.net</channel>
+    <min>0.2.2</min>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease>
+  <filelist>
+   <install name="src/phpdeploy.php" as="phpdeploy"/>
+   <install name="src/PHPDeploy/Command/Command.php" as="PHPDeploy/Command/Command.php"/>
+   <install name="src/PHPDeploy/Command/Deploy.php" as="PHPDeploy/Command/Deploy.php"/>
+   <install name="src/PHPDeploy/Command/Release.php" as="PHPDeploy/Command/Release.php"/>
+   <install name="src/PHPDeploy/Command/Rollback.php" as="PHPDeploy/Command/Rollback.php"/>
+   <install name="src/PHPDeploy/Component/Exception.php" as="PHPDeploy/Component/Exception.php"/>
+   <install name="src/PHPDeploy/Component/Parser/Factory.php" as="PHPDeploy/Component/Parser/Factory.php"/>
+   <install name="src/PHPDeploy/Component/Parser/Parser.php" as="PHPDeploy/Component/Parser/Parser.php"/>
+   <install name="src/PHPDeploy/Component/Parser/Xml.php" as="PHPDeploy/Component/Parser/Xml.php"/>
+   <install name="src/PHPDeploy/Component/Project.php" as="PHPDeploy/Component/Project.php"/>
+   <install name="src/PHPDeploy/Component/Server/Exception.php" as="PHPDeploy/Component/Server/Exception.php"/>
+   <install name="src/PHPDeploy/Component/Server/Factory.php" as="PHPDeploy/Component/Server/Factory.php"/>
+   <install name="src/PHPDeploy/Component/Server/Server.php" as="PHPDeploy/Component/Server/Server.php"/>
+   <install name="src/PHPDeploy/Component/Server/Ssh.php" as="PHPDeploy/Component/Server/Ssh.php"/>
+   <install name="src/PHPDeploy/Deploy.php" as="PHPDeploy/Deploy.php"/>
+   <install name="src/PHPDeploy/phpdeploy.xml" as="PHPDeploy/phpdeploy.xml"/>
+   <install name="src/PHPDeploy/Version.php" as="PHPDeploy/Version.php"/>
+  </filelist>
+ </phprelease>
+</package>
