@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<server>
+	<name>christiankaemper.github.com/pear</name>
+	<summary>PHPDeploy PEAR Channel Server</summary>
+	<alias>christiankaemper</alias>
+	<url>http://christiankaemper.github.com/pear</url>
+</server>

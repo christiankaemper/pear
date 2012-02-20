@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://christiankaemper.github.com/pear</id>
+    <updated>2012-02-20T20:25:15+01:00</updated>
+    <title>PHPDeploy PEAR Channel Server Latest Releases</title>
+    <link href="http://christiankaemper.github.com/pear/feed.xml" rel="self" />
+    <author>
+        <name>http://christiankaemper.github.com/pear</name>
+    </author>
+
+
+</feed>
